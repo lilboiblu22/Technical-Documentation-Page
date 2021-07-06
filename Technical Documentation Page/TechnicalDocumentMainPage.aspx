@@ -4,7 +4,7 @@
 
 <link rel="stylesheet" type="text/css" href="Content/TechnicalStyleSheet.css" />
 <nav id="navbar">
-  <header>JS Documentation</header>
+  <header>HTML Documentation</header>
   <ul>
     <li><a class="nav-link" href="#Introduction">Introduction</a></li>
     <li>
