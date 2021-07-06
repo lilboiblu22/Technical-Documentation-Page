@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="TechnicalDocumentMainPage.aspx.vb" Inherits="Technical_Documentation_Page.TechnicalDocumentMainPage" %>
 
 <!DOCTYPE html>
-
+<title>HTML Documentation Page</title>
 <link rel="stylesheet" type="text/css" href="Content/TechnicalStyleSheet.css" />
 <nav id="navbar">
   <header>HTML Documentation</header>
@@ -424,7 +424,7 @@
         <li>
           All the documentation in this page is taken from
           <a
-            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+            href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML"
             target="_blank"
             >MDN</a
           >
