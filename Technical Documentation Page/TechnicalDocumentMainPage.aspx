@@ -424,7 +424,7 @@
         <li>
           All the documentation in this page is taken from
           <a
-            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+            href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML"
             target="_blank"
             >MDN</a
           >
