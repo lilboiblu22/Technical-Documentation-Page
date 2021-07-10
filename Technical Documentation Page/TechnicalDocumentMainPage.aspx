@@ -41,33 +41,23 @@
     <header>Introduction</header>
     <article>
       <p>
-        JavaScript is a cross-platform, object-oriented scripting language. It
-        is a small and lightweight language. Inside a host environment (for
-        example, a web browser), JavaScript can be connected to the objects of
-        its environment to provide programmatic control over them.
+        HTML is a fairly easy to grasp mark up langauge that utilizes
+        elements to display content on the page. Each of these elements can manipulated
+        to give design and structure to the document for different purposes. This language is a must have skill
+        for those looking to get into front-end web design.
       </p>
 
       <p>
-        JavaScript contains a standard library of objects, such as Array, Date,
-        and Math, and a core set of language elements such as operators, control
-        structures, and statements. Core JavaScript can be extended for a
-        variety of purposes by supplementing it with additional objects; for
-        example:
+        These elements are there to provide the logical flow of the document and what
+        essentially makes up all the visuals of the site. These elements tend to be updated frequently at the dev's
+        discretion. There are many uses for HTML such as:
       </p>
       <ul>
         <li>
-          Client-side JavaScript extends the core language by supplying objects
-          to control a browser and its Document Object Model (DOM). For example,
-          client-side extensions allow an application to place elements on an
-          HTML form and respond to user events such as mouse clicks, form input,
-          and page navigation.
+          Building websites that have dynamic content such as moving images and other content
         </li>
         <li>
-          Server-side JavaScript extends the core language by supplying objects
-          relevant to running JavaScript on a server. For example, server-side
-          extensions allow an application to communicate with a database,
-          provide continuity of information from one invocation to another of
-          the application, or perform file manipulations on a server.
+          Creating the front-end of applications for web based marketplaces 
         </li>
       </ul>
     </article>
