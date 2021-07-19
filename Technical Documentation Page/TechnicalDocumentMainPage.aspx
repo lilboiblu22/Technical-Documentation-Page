@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <title>HTML Documentation Page</title>
+<title>HTML Documentation Page</title>
 <link rel="stylesheet" type="text/css" href="Content/TechnicalStyleSheet.css" />
 <nav id="navbar">
   <header>HTML Documentation</header>
