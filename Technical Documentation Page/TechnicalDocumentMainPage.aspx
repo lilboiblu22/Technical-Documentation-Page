@@ -9,12 +9,10 @@
   <ul>
     <li><a class="nav-link" href="#Introduction">Introduction</a></li>
     <li>
-      <a class="nav-link" href="#What_you_should_already_know"
-        >What you should already know</a
-      >
+      <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
     </li>
     <li>
-      <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+      <a class="nav-link" href="#HTML">HTML</a>
     </li>
     <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
     <li><a class="nav-link" href="#Variables">Variables</a></li>
@@ -45,9 +43,10 @@
         HTML is a fairly easy to grasp mark up langauge that utilizes
         elements to display content on the page. Each of these elements can manipulated
         to give design and structure to the document for different purposes. This language is a must have skill
-        for those looking to get into front-end web design.
+        for those looking to get into front-end web design. In this article, we will be introducing and discussing what HTML
+        is, how to build elements of a HTML page as well as proper syntax.
       </p>
-
+        
       <p>
         These elements are there to provide the logical flow of the document and what
         essentially makes up all the visuals of the site. These elements tend to be updated frequently at the dev's
@@ -58,7 +57,10 @@
           Building websites that have dynamic content such as moving images and other content
         </li>
         <li>
-          Creating the front-end of applications for web based marketplaces 
+          Creating the front-end of applications for web based marketplaces
+        </li>
+          <li>
+          Creating and managing websites for local businesses that would like to reach a wider audience 
         </li>
       </ul>
     </article>
@@ -74,36 +76,32 @@
         </li>
         <li>Good working knowledge of HyperText Markup Language (HTML).</li>
         <li>
-          Some programming experience. If you are new to programming, try one of
-          the tutorials linked on the main page about JavaScript.
+          Some programming experience. If you are new to programming this a perfect guide
+           to getting your feet wet in an IDE (Integrated Development Environment) such as Visual Studio!
         </li>
       </ul>
     </article>
   </section>
-  <section class="main-section" id="JavaScript_and_Java">
-    <header>JavaScript and Java</header>
+  <section class="main-section" id="HTML">
+    <header>HTML</header>
     <article>
       <p>
-        JavaScript and Java are similar in some ways but fundamentally different
-        in some others. The JavaScript language resembles Java but does not have
-        Java's static typing and strong type checking. JavaScript follows most
-        Java expression syntax, naming conventions and basic control-flow
-        constructs which was the reason why it was renamed from LiveScript to
-        JavaScript.
+        HTML (Hypertext Markup Language) isn't a programming language. It is a markup language that advises
+          internet browsers how to structure the pages you visit. 
+          It tends to be as muddled or as basic as the web designer needs it to be. 
+          HTML comprises of a progression of elements, which you use to encase, wrap, or mark up various 
+          pieces of content to cause it to show up or act with a specific goal in mind. T
+          he encasing labels can make content into a hyperlink to associate with another page, italicize words, etc. 
+          For instance, think about the accompanying line of text:
       </p>
-
+        <code>My cat is very grumpy</code>
       <p>
-        In contrast to Java's compile-time system of classes built by
-        declarations, JavaScript supports a runtime system based on a small
-        number of data types representing numeric, Boolean, and string values.
-        JavaScript has a prototype-based object model instead of the more common
-        class-based object model. The prototype-based model provides dynamic
-        inheritance; that is, what is inherited can vary for individual objects.
-        JavaScript also supports functions without any special declarative
-        requirements. Functions can be properties of objects, executing as
-        loosely typed methods.
-      </p>
-      <p>
+        If we wanted the text to show up on our page, we could specify that it is a paragraph by 
+          enclosing it in a paragraph (<a href="/en-US/docs/Web/HTML/Element/p">p</a>) element:</p>
+        
+        <code><p>My cat is very grumpy</p></code>
+      
+        <p>
         JavaScript is a very free-form language compared to Java. You do not
         have to declare all variables, classes, and methods. You do not have to
         be concerned with whether methods are public, private, or protected, and
