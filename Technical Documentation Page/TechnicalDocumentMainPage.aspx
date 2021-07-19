@@ -2,22 +2,21 @@
 
 <!DOCTYPE html>
 <title>HTML Documentation Page</title>
-<title>HTML Documentation Page</title>
 <link rel="stylesheet" type="text/css" href="Content/TechnicalStyleSheet.css" />
 <nav id="navbar">
   <header>HTML Documentation</header>
   <ul>
-    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li><a class="nav-link" href="#HTML_Introduction">HTML Introduction</a></li>
     <li>
       <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
     </li>
     <li>
-      <a class="nav-link" href="#HTML">HTML</a>
+      <a class="nav-link" href="#Elements">Elements</a>
     </li>
-    <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
-    <li><a class="nav-link" href="#Variables">Variables</a></li>
+    <li><a class="nav-link" href="#Nesting_Elements">Nesting Elements</a></li>
+    <li><a class="nav-link" href="#Attributes">Attributes</a></li>
     <li>
-      <a class="nav-link" href="#Declaring_variables">Declaring variables</a>
+      <a class="nav-link" href="#Hierarchy">Hierarchy</a>
     </li>
     <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
     <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
@@ -36,8 +35,8 @@
   </ul>
 </nav>
 <main id="main-doc">
-  <section class="main-section" id="Introduction">
-    <header>Introduction</header>
+  <section class="main-section" id="HTML_Introduction">
+    <header>HTML Introduction</header>
     <article>
       <p>
         HTML is a fairly easy to grasp mark up langauge that utilizes
@@ -82,8 +81,8 @@
       </ul>
     </article>
   </section>
-  <section class="main-section" id="HTML">
-    <header>HTML</header>
+  <section class="main-section" id="Elements">
+    <header>Elements</header>
     <article>
       <p>
         HTML (Hypertext Markup Language) isn't a programming language. It is a markup language that advises
@@ -102,51 +101,71 @@
         <code><p>My cat is very grumpy</p></code>
       
         <p>
-        JavaScript is a very free-form language compared to Java. You do not
-        have to declare all variables, classes, and methods. You do not have to
-        be concerned with whether methods are public, private, or protected, and
-        you do not have to implement interfaces. Variables, parameters, and
-        function return types are not explicitly typed.
+        All elements usually follow the format of having starting tags that look like this (<>) followed by (< />) where the specific element's
+        tag will be inside. In your IDE you can try and opening the page in a browser and see the content displayed! Practice this with other types
+        of elements to see how other types output on the page!
       </p>
     </article>
   </section>
-  <section class="main-section" id="Hello_world">
-    <header>Hello world</header>
+  <section class="main-section" id="Nesting_Elements">
+    <header>Nesting Elements</header>
     <article>
-      To get started with writing JavaScript, open the Scratchpad and write your
-      first "Hello world" JavaScript code:
-      <code
-        >function greetMe(yourName) { alert("Hello " + yourName); }
-        greetMe("World");
+      Elements can be placed and "nested" within other elements on your page to customize. This is what is called nesting! If we wanted to say that 
+      the cat is very hungry, we could wrap the word very in the 
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong"><code><strong>Strong</strong></code></a> method.
+      <code>
+        The cat was <strong>very</strong> hungry.
       </code>
 
-      Select the code in the pad and hit Ctrl+R to watch it unfold in your
-      browser!
+     In order for the nesting to appear right, you have to make sure that they are configured in a way where one is inside of the other.
+        With this knowledge we have to understand the difference between In-line elements and Block-level elements.
+        <li>On a page, block-level items compose a visible block. Following the preceding content, a block-level element appears on a new line. 
+            Any material that comes after a block-level element gets its own line. 
+            Block-level components are often page structural elements. Headings, paragraphs, lists, navigation menus, 
+            and footers are examples of block-level elements.</li>
+        
+        <li>Only small portions of the document's content are surrounded by inline components, which are enclosed within block-level elements (not entire paragraphs or groupings of content). 
+            A new line will not appear in the document because of an inline element. 
+            It's most commonly used with text; for example, an (a) element produces a hyperlink, while (em) or (strong) elements provide emphasis.</li>
+
     </article>
   </section>
-  <section class="main-section" id="Variables">
-    <header>Variables</header>
+  <section class="main-section" id="Attributes">
+    <header>Attributes</header>
     <p>
-      You use variables as symbolic names for values in your application. The
-      names of variables, called identifiers, conform to certain rules.
+      Elements can also have attributes that contain information about the element that won't apppear
+      on the page. Attributes like the <strong>class</strong> attribute is used as an identification to locate the element
+      for style information.
     </p>
     <p>
-      A JavaScript identifier must start with a letter, underscore (_), or
-      dollar sign ($); subsequent characters can also be digits (0-9). Because
-      JavaScript is case sensitive, letters include the characters "A" through
-      "Z" (uppercase) and the characters "a" through "z" (lowercase).
+      An attribute should contain the following:
     </p>
-    <p>
-      You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers.
-      You can also use the Unicode escape sequences as characters in
-      identifiers. Some examples of legal names are Number_hits, temp99, and
-      _name.
+      <li>There is a space between it and the name of the element. (The attributes of
+          an element with more than one attribute should also be separated by spaces.)</li>
+      
+      <li>The name of the attribute followed by an equal sign.</li>
+      
+      <li>The value of the attribute, with open and closed quotations.</li>
+    
+      <p>
+      Another element that is commonly used is the (a). This is called the <emp>Anchor</emp>. This will allow you
+      to turn any text in the anchor into a a hyperlink! Anchors enchlose a number of attributes. 
+      <br />The <strong>href</strong> is an attribute that specifies a web address for the link.
+      <br />The <strong>title</strong> element provides additional information about the link, such as a description of the connected page. 
+      For instance, title="The Mozilla homepage." 
+      When a pointer hovers over an element, a tooltip emerges.
+      <br />The <strong>target</strong> attribute determines the browser context in which the link will be shown. The target=" _blank" attribute,
+      for example, will open the link in a new tab.
+      Simply omit this parameter if you want the referenced information to appear in the current tab.
     </p>
+
   </section>
-  <section class="main-section" id="Declaring_variables">
-    <header>Declaring variables</header>
+  <section class="main-section" id="Hierarchy">
+    <header>Hierarchy</header>
     <article>
-      You can declare a variable in three ways:
+      We know there you can have different paragraphs and headers on the page. But how do you use them
+      to format your page for ease of reading. Well, we have hiearchy with headings and paragraphs by labeling them for example,
+      
       <p>
         With the keyword var. For example, <code>var x = 42.</code> This syntax
         can be used to declare both local and global variables.
