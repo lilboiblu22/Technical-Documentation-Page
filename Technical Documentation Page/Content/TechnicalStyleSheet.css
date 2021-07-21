@@ -1,8 +1,8 @@
 ﻿html,
 body {
     min-width: 290px;
-    color: #4d4e53;
-    background-color: #ffffff;
+    color: #778899;
+    background-color: #778899;
     font-family: 'Open Sans', Arial, sans-serif;
     line-height: 1.5;
 }
@@ -79,7 +79,7 @@ code {
     word-break: normal;
     word-wrap: normal;
     line-height: 2;
-    background-color: #f7f7f7;
+    background-color: #808080;
     padding: 15px;
     margin: 12px;
     border-radius: 5px;

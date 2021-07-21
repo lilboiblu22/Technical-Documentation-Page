@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <title>HTML Documentation Page</title>
-<link rel="stylesheet" type="text/css" href="Content/TechnicalStyleSheet.css" />
+<link rel="stylesheet" type="text/css" href="Content/TechnicalStyleSheet.css"/>
 <nav id="navbar">
   <header>HTML Documentation</header>
   <ul>
@@ -254,43 +254,25 @@
       </p>
         <code>
 <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
-  <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block
-  Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
+ <blockquote> <strong>The HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block
+  Quotation Element</em>) indicates that the enclosed text is an extended quotation.
 </blockquote> </code>
       
     </article>
   </section>
   <section class="main-section" id="Superscript and Subscript">
-    <header>Data types</header>
+    <header>Superscript and Subscript</header>
     <article>
-      <p>The latest ECMAScript standard defines seven data types:</p>
-      <ul>
-        <li>
-          <p>Six data types that are primitives:</p>
-          <ul>
-            <li>Boolean. true and false.</li>
-            <li>
-              null. A special keyword denoting a null value. Because JavaScript
-              is case-sensitive, null is not the same as Null, NULL, or any
-              other variant.
-            </li>
-            <li>undefined. A top-level property whose value is undefined.</li>
-            <li>Number. 42 or 3.14159.</li>
-            <li>String. "Howdy"</li>
-            <li>
-              Symbol (new in ECMAScript 2015). A data type whose instances are
-              unique and immutable.
-            </li>
-          </ul>
-        </li>
+      <p>TWhen marking up elements like dates, chemical formulae, and mathematical equations,
+          you'll occasionally need to utilize superscript and subscript to ensure 
+          that they have the correct meaning.</p>
+        <p>You'll be using</p>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup">
+          <code>&lt;sup&gt;</code></a>
+        <p>and</p>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub">
+          <code>&lt;sub&gt;</code></a>
 
-        <li>and Object</li>
-      </ul>
-      Although these data types are a relatively small amount, they enable you
-      to perform useful functions with your applications. Objects and functions
-      are the other fundamental elements in the language. You can think of
-      objects as named containers for values, and functions as procedures that
-      your application can perform.
     </article>
   </section>
   <section class="main-section" id="if...else_statement">
