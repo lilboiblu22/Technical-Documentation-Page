@@ -7,31 +7,19 @@
   <header>HTML Documentation</header>
   <ul>
     <li><a class="nav-link" href="#HTML_Introduction">HTML Introduction</a></li>
-    <li>
-      <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
-    </li>
-    <li>
-      <a class="nav-link" href="#Elements">Elements</a>
-    </li>
+    <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+    <li><a class="nav-link" href="#Elements">Elements</a></li>
     <li><a class="nav-link" href="#Nesting_Elements">Nesting Elements</a></li>
     <li><a class="nav-link" href="#Attributes">Attributes</a></li>
-    <li>
-      <a class="nav-link" href="#Hierarchy">Hierarchy</a>
-    </li>
-    <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
-    <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
-    <li><a class="nav-link" href="#Constants">Constants</a></li>
+    <li><a class="nav-link" href="#Hierarchy">Hierarchy</a></li>
+    <li><a class="nav-link" href="#Lists">Lists</a></li>
+    <li><a class="nav-link" href="#Hyperlinks">Hyperlinks</a></li>
+    <li><a class="nav-link" href="#Blockquotes">Blockquotes</a></li>
     <li><a class="nav-link" href="#Data_types">Data types</a></li>
-    <li>
-      <a class="nav-link" href="#if...else_statement">if...else statement</a>
-    </li>
+    <li><a class="nav-link" href="#if...else_statement">if...else statement</a></li>
     <li><a class="nav-link" href="#while_statement">while statement</a></li>
-    <li>
-      <a class="nav-link" href="#Function_declarations"
-        >Function declarations</a
-      >
-    </li>
-    <li><a class="nav-link" href="#Reference">Reference</a></li>
+    <li><a class="nav-link" href="#Function_declarations">Function declarations</a></li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>    
   </ul>
 </nav>
 <main id="main-doc">
@@ -164,113 +152,115 @@
     <header>Hierarchy</header>
     <article>
       We know there you can have different paragraphs and headers on the page. But how do you use them
-      to format your page for ease of reading. Well, we have hiearchy with headings and paragraphs by labeling them for example,
+      to format your page for ease of reading? Well, we have hiearchy with headings and paragraphs by labeling them for example.
       
       <p>
-        With the keyword var. For example, <code>var x = 42.</code> This syntax
-        can be used to declare both local and global variables.
+        When you want to structure your site in a way that brings attention to other parts of the page you can use
+        h1,h2,h3,h4,h5,h6 and so on. The same goes for the (p) element. 
       </p>
       <p>
-        By simply assigning it a value. For example, <code>x = 42.</code> This
-        always declares a global variable. It generates a strict JavaScript
-        warning. You shouldn't use this variant.
+        This is helpful for labeling different parts of the page such as subheadings and allows
+          the CSS file that might accompany the page to customize each individual element!
       </p>
-      <p>
-        With the keyword let. For example,<code> let y = 13.</code> This syntax
-        can be used to declare a block scope local variable. See Variable scope
-        below.
-      </p>
+      
     </article>
   </section>
-  <section class="main-section" id="Variable_scope">
-    <header>Variable scope</header>
+  <section class="main-section" id="Lists">
+    <header>Lists</header>
     <article>
       <p>
-        When you declare a variable outside of any function, it is called a
-        global variable, because it is available to any other code in the
-        current document. When you declare a variable within a function, it is
-        called a local variable, because it is available only within that
-        function.
+        When you want to have a point in your site where you want to list out things like 
+        ingredients or other things and need to beformatted nicely on the page. There are
+        a few different types of lists that we can utilize for our ease of use.
       </p>
 
       <p>
-        JavaScript before ECMAScript 2015 does not have block statement scope;
-        rather, a variable declared within a block is local to the function (or
-        global scope) that the block resides within. For example the following
-        code will log 5, because the scope of x is the function (or global
-        context) within which x is declared, not the block, which in this case
-        is an if statement.
+        We first start with the Unordered list. This is for items that don't need to be grouped
+        in a certain order. We start with wrapping the items in a (ul) element.
       </p>
-      <code>if (true) { var x = 5; } console.log(x); // 5</code>
+      <code><ul>
+                Tortillas
+                Eggs
+                Cheese
+                Chicken
+                Hot Sauce
+            </ul></code>
       <p>
-        This behavior changes, when using the let declaration introduced in
-        ECMAScript 2015.
+        Then we wrap each individual item in the list in the (li) element like so:
       </p>
 
-      <code
-        >if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
-        defined</code
-      >
+      <code>
+      <ul>
+       <li>Tortillas</li>
+      <li>Eggs</li>
+      <li>Cheese</li>
+      <li>Chicken</li>
+      <li>Hot Sauce</li>
+        </ul>
+      </code>
+
+        <p>We then have Ordered lists which follows the same format as the last list
+           but with the (ol) element like so:
+        </p>
+        <code> 
+       <ol>
+      <li>Preheat Oven</li>
+      <li>Prepare Chicken</li>
+      <li>Cut Cheese</li>
+      <li>Grab hot sauce</li>
+      <li>Cook torilla</li> 
+       </ol></code>
+
     </article>
   </section>
-  <section class="main-section" id="Global_variables">
-    <header>Global variables</header>
+  <section class="main-section" id="Hyperlinks">
+    <header>Hyperlinks</header>
     <article>
       <p>
-        Global variables are in fact properties of the global object. In web
-        pages the global object is window, so you can set and access global
-        variables using the window.variable syntax.
+        If you have browsed the web at any point in time you've taken a hyperlink. In my mind I think
+          of hyperlinks as bridges that take you from one site to another. They are also super easy to implement!
       </p>
 
       <p>
-        Consequently, you can access global variables declared in one window or
-        frame from another window or frame by specifying the window or frame
-        name. For example, if a variable called phoneNumber is declared in a
-        document, you can refer to this variable from an iframe as
-        parent.phoneNumber.
+        All you need to create a hyperlink is a paragraph element and an anchor element formatted as so:
       </p>
+    <code> The p element first with the anchor nested inside. As well as the text to be displayed in the link
+        should be inside the anchor.<p>This is a link to
+<a href="https://www.mozilla.org/en-US/">the Mozilla homepage</a>.
+</p></code>
+
+        
+    <p>Which then gives us the result: <br />This is a link to</p>      
+    <p><a href="https://www.mozilla.org/en-US/">the Mozilla homepage</a>.
+    </p>
+        
     </article>
   </section>
-  <section class="main-section" id="Constants">
-    <header>Constants</header>
+  <section class="main-section" id="Blockquotes">
+    <header>Blockquotes</header>
     <article>
       <p>
-        You can create a read-only, named constant with the const keyword. The
-        syntax of a constant identifier is the same as for a variable
-        identifier: it must start with a letter, underscore or dollar sign and
-        can contain alphabetic, numeric, or underscore characters.
+        Blockquotes are great for when a client wants a slogan to be written or if there is
+        a certain inspirational quote that you feel needs to be on the page for whatever reason.
+        They are also easily implemented say we have this:
       </p>
-
-      <code>const PI = 3.14;</code>
+        <code> The HTML Block quote element (or HTML Block Quotation Element)
+        indicates that the enclosed text is an extended quotation.
+        </code>
       <p>
-        A constant cannot change value through assignment or be re-declared
-        while the script is running. It has to be initialized to a value.
+        To make this a block quote we just have to wrap the (p) element in a blockquote
+        element. In the blockquote element we have a cite attribute in which we specify
+        the address of where the quote is from. Here is how it looks.
       </p>
-
-      <p>
-        The scope rules for constants are the same as those for let block scope
-        variables. If the const keyword is omitted, the identifier is assumed to
-        represent a variable.
-      </p>
-
-      <p>
-        You cannot declare a constant with the same name as a function or
-        variable in the same scope. For example:
-      </p>
-
-      <code
-        >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
-        CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
-        }</code
-      >
-      However, object attributes are not protected, so the following statement
-      is executed without problems.
-      <code
-        >const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code
-      >
+        <code>
+<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+  <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block
+  Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
+</blockquote> </code>
+      
     </article>
   </section>
-  <section class="main-section" id="Data_types">
+  <section class="main-section" id="Superscript and Subscript">
     <header>Data types</header>
     <article>
       <p>The latest ECMAScript standard defines seven data types:</p>
